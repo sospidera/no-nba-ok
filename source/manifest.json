@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "No NBA Tweets Okay",
+  "description": "Removes all tweets from your Twitter feed that mention the NBA",
+  "version": "1.0",
+
+  "permissions": [
+    "https://twitter.com/*"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["jquery.js", "no-nba.js"]
+    }
+  ]
+}
